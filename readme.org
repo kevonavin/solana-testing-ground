@@ -1,0 +1,13 @@
+* solana testing ground
+A place to test solana api stuff and try things like staking.
+
+Featuring a clojure lib that is programatically generated from the Solana web3
+flow module to allow documentation / editor integration from Clojure.
+
+** Goals
+- UI as "dashboard" of current state, connection, cluster, etc.
+- staking functionality
+** impl
+*** localstorage
+- defaults automatically loaded/stored in localstorage.
+  Including stake account info and test account info

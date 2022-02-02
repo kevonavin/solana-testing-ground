@@ -1,0 +1,9 @@
+/node_modules
+.DS_Store
+.lsp/
+.nrepl-port
+.clj-kondo/*/
+.cpcache
+.shadow-cljs
+yarn.lock
+public/*/
