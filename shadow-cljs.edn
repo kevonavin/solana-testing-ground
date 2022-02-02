@@ -6,7 +6,7 @@
  :builds
  {:app {:target     :browser
         :output-dir "public/js"
-        :asset-path "js"
+        :asset-path "/solana-testing-ground/js"
         :js-options {:js-provider :shadow}
         :modules    {:main {:init-fn kev.sol.core/init}}
         :compiler-options {#_#_:output-feature-set :es5
