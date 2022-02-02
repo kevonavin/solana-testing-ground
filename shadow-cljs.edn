@@ -9,7 +9,8 @@
         :asset-path "js"
         :js-options {:js-provider :shadow}
         :modules    {:main {:init-fn kev.sol.core/init}}
-        :compiler-options {:output-feature-set :es5}
+        :compiler-options {#_#_:output-feature-set :es5
+                           :optimizations      :simple}
         :devtools   {:http-root "public"
                      :http-port 8020
                      :after-load kev.sol.core/init}}}}

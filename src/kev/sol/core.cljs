@@ -20,7 +20,8 @@
      SolletWalletAdapter,
      TorusWalletAdapter]]
    ["@mui/material" :as mui]
-   ["@mui/icons-material" :as mui.icons]
+;   ["@mui/icons-material" :as mui.icons]
+   ["@mui/icons-material/Refresh" :as Refresh]
    [kev.sol.web3.lib :as kweb3]
    [reagent.core :as r]
    [reagent.ratom :as ratom]
@@ -246,7 +247,9 @@
      [:> mui/TextField
       {:id "cluster"
        :sx {:mx 1
-            :width (str (count cluster) "ch")}
+            :width (str (max 7
+                             (count cluster))
+                        "ch")}
        :label "cluster"
        :variant "standard"
        :size "small"
@@ -265,7 +268,7 @@
      [:> mui/Fab
       {:component "button"
        :type "submit"}
-      [:> mui.icons/Refresh]]]))
+      [:> Refresh/default]]]))
 
 (comment
 
@@ -299,7 +302,7 @@
       [label
        [:> mui/Typography {:variant "subtitle2"} "endpoint:"]
        [:span {:style {:width "1ch"}}]
-       (aget conn "_rpcEndpoint")]
+       (some-> conn (aget "_rpcEndpoint"))]
       [cluster-config]
 
       [:div]
@@ -334,7 +337,7 @@
      ^{:key (str "refresh" clicks)}
      [:> mui/Fab
       {:on-click #(rf/dispatch [:test/click])}
-      [:> mui.icons/Refresh]]]))
+      [:> Refresh/default]]]))
 
 (resolve 'stuffs)
 (comment
@@ -388,6 +391,7 @@
   )
 
 
+
 (defn ^:export init []
   (rf/clear-subscription-cache!)
   (re-frame.loggers/set-loggers!
@@ -403,5 +407,5 @@
   (rdom/render
    [:f> wallet-interop ;; need the :f> bc it's a react function
     [restartable
-     [stuffs]]]
+     #'stuffs]]
    (.getElementById js/document "app")))

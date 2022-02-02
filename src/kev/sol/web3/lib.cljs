@@ -10,7 +10,7 @@
 properties - `any`
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -23,7 +23,7 @@ properties - `any`
 (defn Struct_encode "
 
 
-@return -`Buffer`<>" 
+-@return -`Buffer`<>"
   [this & args]
   (apply (.bind (cljs.core/aget this "encode" ) this) args))
 
@@ -31,7 +31,7 @@ properties - `any`
 data - `Buffer`<>
 
 
-@return -`any`" 
+-@return -`any`"
   [& args]
   (apply
     (.bind
@@ -46,7 +46,7 @@ data - `Buffer`<>
 data - `Buffer`<>
 
 
-@return -`any`" 
+-@return -`any`"
   [& args]
   (apply
     (.bind
@@ -66,7 +66,7 @@ data - `Buffer`<>
 properties - `any`
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -99,12 +99,12 @@ properties - `any`
 
 (defn PublicKey_constructor "*
      * Create a new PublicKey object
-     * @param value ed25519 public key as buffer or base-58 encoded string
+     * -@param value ed25519 public key as buffer or base-58 encoded string
      
 value - `PublicKeyInitData`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -122,7 +122,7 @@ value - `PublicKeyInitData`<>
 publicKey - `PublicKey`<>
 
 
-@return -`bool`" 
+-@return -`bool`"
   [this & args]
   (apply (.bind (cljs.core/aget this "equals" ) this) args))
 
@@ -131,14 +131,14 @@ publicKey - `PublicKey`<>
      
 
 
-@return -`string`" 
+-@return -`string`"
   [this & args]
   (apply (.bind (cljs.core/aget this "toBase58" ) this) args))
 
 (defn PublicKey_toJSON "
 
 
-@return -`string`" 
+-@return -`string`"
   [this & args]
   (apply (.bind (cljs.core/aget this "toJSON" ) this) args))
 
@@ -147,7 +147,7 @@ publicKey - `PublicKey`<>
      
 
 
-@return -`Uint8Array`<>" 
+-@return -`Uint8Array`<>"
   [this & args]
   (apply (.bind (cljs.core/aget this "toBytes" ) this) args))
 
@@ -156,7 +156,7 @@ publicKey - `PublicKey`<>
      
 
 
-@return -`Buffer`<>" 
+-@return -`Buffer`<>"
   [this & args]
   (apply (.bind (cljs.core/aget this "toBuffer" ) this) args))
 
@@ -165,7 +165,7 @@ publicKey - `PublicKey`<>
      
 
 
-@return -`string`" 
+-@return -`string`"
   [this & args]
   (apply (.bind (cljs.core/aget this "toString" ) this) args))
 
@@ -179,7 +179,7 @@ seed - `string`
 programId - `PublicKey`<>
 
 
-@return -`Promise`<`PublicKey`<>>" 
+-@return -`Promise`<`PublicKey`<>>"
   [& args]
   (apply
     (.bind
@@ -197,7 +197,7 @@ seeds - `Array`<`Buffer`<>|`Uint8Array`<>>
 programId - `PublicKey`<>
 
 
-@return -`Promise`<`PublicKey`<>>" 
+-@return -`Promise`<`PublicKey`<>>"
   [& args]
   (apply
     (.bind
@@ -219,7 +219,7 @@ seeds - `Array`<`Buffer`<>|`Uint8Array`<>>
 programId - `PublicKey`<>
 
 
-@return -`Promise`<(`PublicKey`<>,`number`)>" 
+-@return -`Promise`<(`PublicKey`<>,`number`)>"
   [& args]
   (apply
     (.bind
@@ -236,7 +236,7 @@ programId - `PublicKey`<>
 pubkey - `Uint8Array`<>
 
 
-@return -`bool`" 
+-@return -`bool`"
   [& args]
   (apply
     (.bind
@@ -259,12 +259,12 @@ pubkey - `Uint8Array`<>
      *
      * If the secretKey parameter is not provided a new key pair is randomly
      * created for the account
-     * @param secretKey Secret key for the account
+     * -@param secretKey Secret key for the account
      
 secretKey - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -337,7 +337,7 @@ firstNormalEpoch - `number`
 firstNormalSlot - `number`
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -351,7 +351,7 @@ firstNormalSlot - `number`
 slot - `number`
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "getEpoch" ) this) args))
 
@@ -359,7 +359,7 @@ slot - `number`
 slot - `number`
 
 
-@return -(`number`,`number`)" 
+-@return -(`number`,`number`)"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getEpochAndSlotIndex" ) this)
@@ -369,7 +369,7 @@ slot - `number`
 epoch - `number`
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getFirstSlotInEpoch" ) this)
@@ -379,7 +379,7 @@ epoch - `number`
 epoch - `number`
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "getLastSlotInEpoch" ) this) args))
 
@@ -387,7 +387,7 @@ epoch - `number`
 epoch - `number`
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "getSlotsInEpoch" ) this) args))
 
@@ -419,13 +419,13 @@ epoch - `number`
 
 (defn NonceAccount_fromAccountData "*
      * Deserialize NonceAccount from the account data.
-     * @param buffer account data
-     * @return NonceAccount
+     * -@param buffer account data
+     * -@return NonceAccount
      
 buffer - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 
-@return -`NonceAccount`<>" 
+-@return -`NonceAccount`<>"
   [& args]
   (apply
     (.bind
@@ -470,12 +470,12 @@ buffer - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 (defn Keypair_constructor "*
      * [object Object],[object Object],[object Object]
-     * @param keypair ed25519 keypair
+     * -@param keypair ed25519 keypair
      
 keypair - `Ed25519Keypair`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -490,7 +490,7 @@ keypair - `Ed25519Keypair`<>
      
 
 
-@return -`Keypair`<>" 
+-@return -`Keypair`<>"
   [& args]
   (apply
     (.bind
@@ -505,15 +505,15 @@ keypair - `Ed25519Keypair`<>
 
 (defn Keypair_fromSecretKey "*
      * [object Object],[object Object],[object Object]
-     * @throws error if the provided secret key is invalid and validation is not skipped.
-     * @param secretKey secret key byte array
-     * @param options : skip secret key validation
+     * -@throws error if the provided secret key is invalid and validation is not skipped.
+     * -@param secretKey secret key byte array
+     * -@param options : skip secret key validation
      
 secretKey - `Uint8Array`<>
 options - `object`
 
 
-@return -`Keypair`<>" 
+-@return -`Keypair`<>"
   [& args]
   (apply
     (.bind
@@ -526,12 +526,12 @@ options - `object`
 
 (defn Keypair_fromSeed "*
      * Generate a keypair from a 32 byte seed.
-     * @param seed seed byte array
+     * -@param seed seed byte array
      
 seed - `Uint8Array`<>
 
 
-@return -`Keypair`<>" 
+-@return -`Keypair`<>"
   [& args]
   (apply
     (.bind
@@ -653,7 +653,7 @@ seed - `Uint8Array`<>
 args - `MessageArgs`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -667,7 +667,7 @@ args - `MessageArgs`<>
 index - `number`
 
 
-@return -`bool`" 
+-@return -`bool`"
   [this & args]
   (apply (.bind (cljs.core/aget this "isAccountSigner" ) this) args))
 
@@ -675,7 +675,7 @@ index - `number`
 index - `number`
 
 
-@return -`bool`" 
+-@return -`bool`"
   [this & args]
   (apply (.bind (cljs.core/aget this "isAccountWritable" ) this) args))
 
@@ -683,28 +683,28 @@ index - `number`
 index - `number`
 
 
-@return -`bool`" 
+-@return -`bool`"
   [this & args]
   (apply (.bind (cljs.core/aget this "isProgramId" ) this) args))
 
 (defn Message_programIds "
 
 
-@return -`ArrayTypeAnnotation`" 
+-@return -`ArrayTypeAnnotation`"
   [this & args]
   (apply (.bind (cljs.core/aget this "programIds" ) this) args))
 
 (defn Message_nonProgramIds "
 
 
-@return -`ArrayTypeAnnotation`" 
+-@return -`ArrayTypeAnnotation`"
   [this & args]
   (apply (.bind (cljs.core/aget this "nonProgramIds" ) this) args))
 
 (defn Message_serialize "
 
 
-@return -`Buffer`<>" 
+-@return -`Buffer`<>"
   [this & args]
   (apply (.bind (cljs.core/aget this "serialize" ) this) args))
 
@@ -714,7 +714,7 @@ index - `number`
 buffer - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 
-@return -`Message`<>" 
+-@return -`Message`<>"
   [& args]
   (apply
     (.bind
@@ -809,7 +809,7 @@ buffer - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 opts - `TransactionInstructionCtorFields`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -939,7 +939,7 @@ opts - `TransactionInstructionCtorFields`<>
 opts - `TransactionCtorFields`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -955,7 +955,7 @@ opts - `TransactionCtorFields`<>
 & rest - `Array`<`Transaction`<>|`TransactionInstruction`<>|`TransactionInstructionCtorFields`<>>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [this & args]
   (apply (.bind (cljs.core/aget this "add" ) this) args))
 
@@ -964,7 +964,7 @@ opts - `TransactionCtorFields`<>
      
 
 
-@return -`Message`<>" 
+-@return -`Message`<>"
   [this & args]
   (apply (.bind (cljs.core/aget this "compileMessage" ) this) args))
 
@@ -973,7 +973,7 @@ opts - `TransactionCtorFields`<>
      
 
 
-@return -`Buffer`<>" 
+-@return -`Buffer`<>"
   [this & args]
   (apply (.bind (cljs.core/aget this "serializeMessage" ) this) args))
 
@@ -982,14 +982,14 @@ opts - `TransactionCtorFields`<>
      * The first signer will be used as the transaction fee payer account.
      *
      * Signatures can be added with either `partialSign` or `addSignature`
-     * @deprecated Deprecated since v0.84.0. Only the fee payer needs to be
+     * -@deprecated Deprecated since v0.84.0. Only the fee payer needs to be
      * specified and it can be set in the Transaction constructor or with the
      * `feePayer` property.
      
 & rest - `Array`<`PublicKey`<>>
 
 
-@return -`VoidTypeAnnotation`" 
+-@return -`VoidTypeAnnotation`"
   [this & args]
   (apply (.bind (cljs.core/aget this "setSigners" ) this) args))
 
@@ -1010,7 +1010,7 @@ opts - `TransactionCtorFields`<>
 & rest - `Array`<`Signer`<>>
 
 
-@return -`VoidTypeAnnotation`" 
+-@return -`VoidTypeAnnotation`"
   [this & args]
   (apply (.bind (cljs.core/aget this "sign" ) this) args))
 
@@ -1024,7 +1024,7 @@ opts - `TransactionCtorFields`<>
 & rest - `Array`<`Signer`<>>
 
 
-@return -`VoidTypeAnnotation`" 
+-@return -`VoidTypeAnnotation`"
   [this & args]
   (apply (.bind (cljs.core/aget this "partialSign" ) this) args))
 
@@ -1037,7 +1037,7 @@ pubkey - `PublicKey`<>
 signature - `Buffer`<>
 
 
-@return -`VoidTypeAnnotation`" 
+-@return -`VoidTypeAnnotation`"
   [this & args]
   (apply (.bind (cljs.core/aget this "addSignature" ) this) args))
 
@@ -1046,7 +1046,7 @@ signature - `Buffer`<>
      
 
 
-@return -`bool`" 
+-@return -`bool`"
   [this & args]
   (apply (.bind (cljs.core/aget this "verifySignatures" ) this) args))
 
@@ -1056,7 +1056,7 @@ signature - `Buffer`<>
 config - `SerializeConfig`<>
 
 
-@return -`Buffer`<>" 
+-@return -`Buffer`<>"
   [this & args]
   (apply (.bind (cljs.core/aget this "serialize" ) this) args))
 
@@ -1066,7 +1066,7 @@ config - `SerializeConfig`<>
 buffer - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -1084,7 +1084,7 @@ message - `Message`<>
 signatures - `Array`<`string`>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -1141,7 +1141,7 @@ signatures - `Array`<`string`>
 
 (defn ConfirmedSignaturesForAddress2Options_-before "*
      * Start searching backwards from this transaction signature.
-     * @remark If not provided the search starts from the highest max confirmed block.
+     * -@remark If not provided the search starts from the highest max confirmed block.
      "  [this] (cljs.core/aget this "before" ))
 
 (defn ConfirmedSignaturesForAddress2Options_-until "*
@@ -1154,7 +1154,7 @@ signatures - `Array`<`string`>
 
 (def ConfirmedSignaturesForAddress2Options {"before"  "*
      * Start searching backwards from this transaction signature.
-     * @remark If not provided the search starts from the highest max confirmed block.
+     * -@remark If not provided the search starts from the highest max confirmed block.
       `TransactionSignature`<>" , "until"  "*
      * Search until this transaction signature is reached, if found before `limit`.
       `TransactionSignature`<>" , "limit"  "*
@@ -1163,7 +1163,7 @@ signatures - `Array`<`string`>
 
 (defn SignaturesForAddressOptions_-before "*
      * Start searching backwards from this transaction signature.
-     * @remark If not provided the search starts from the highest max confirmed block.
+     * -@remark If not provided the search starts from the highest max confirmed block.
      "  [this] (cljs.core/aget this "before" ))
 
 (defn SignaturesForAddressOptions_-until "*
@@ -1176,7 +1176,7 @@ signatures - `Array`<`string`>
 
 (def SignaturesForAddressOptions {"before"  "*
      * Start searching backwards from this transaction signature.
-     * @remark If not provided the search starts from the highest max confirmed block.
+     * -@remark If not provided the search starts from the highest max confirmed block.
       `TransactionSignature`<>" , "until"  "*
      * Search until this transaction signature is reached, if found before `limit`.
       `TransactionSignature`<>" , "limit"  "*
@@ -2636,14 +2636,14 @@ signatures - `Array`<`string`>
 
 (defn Connection_constructor "*
      * Establish a JSON RPC connection
-     * @param endpoint URL to the fullnode JSON RPC endpoint
-     * @param commitmentOrConfig optional default commitment level or optional ConnectionConfig configuration object
+     * -@param endpoint URL to the fullnode JSON RPC endpoint
+     * -@param commitmentOrConfig optional default commitment level or optional ConnectionConfig configuration object
      
 endpoint - `string`
 commitmentOrConfig - `Commitment`<>|`ConnectionConfig`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -2664,7 +2664,7 @@ publicKey - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`number`>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`number`>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getBalanceAndContext" ) this)
@@ -2677,7 +2677,7 @@ publicKey - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`number`>" 
+-@return -`Promise`<`number`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getBalance" ) this) args))
 
@@ -2687,7 +2687,7 @@ commitment - `Commitment`<>
 slot - `number`
 
 
-@return -`Promise`<`number`|`NullLiteralTypeAnnotation`>" 
+-@return -`Promise`<`number`|`NullLiteralTypeAnnotation`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getBlockTime" ) this) args))
 
@@ -2697,7 +2697,7 @@ slot - `number`
      
 
 
-@return -`Promise`<`number`>" 
+-@return -`Promise`<`number`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getMinimumLedgerSlot" ) this)
@@ -2708,7 +2708,7 @@ slot - `number`
      
 
 
-@return -`Promise`<`number`>" 
+-@return -`Promise`<`number`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getFirstAvailableBlock" ) this)
@@ -2720,7 +2720,7 @@ slot - `number`
 config - `GetSupplyConfig`<>|`Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`Supply`<>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`Supply`<>>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getSupply" ) this) args))
 
@@ -2731,7 +2731,7 @@ tokenMintAddress - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`TokenAmount`<>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`TokenAmount`<>>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getTokenSupply" ) this) args))
 
@@ -2742,7 +2742,7 @@ tokenAddress - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`TokenAmount`<>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`TokenAmount`<>>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getTokenAccountBalance" ) this)
@@ -2754,7 +2754,7 @@ commitment - `Commitment`<>
 
 (defn Connection_getTokenAccountsByOwner "*
  * Fetch all the token accounts owned by the specified account
- * @return {Promise<RpcResponseAndContext<Array<{
+ * -@return {Promise<RpcResponseAndContext<Array<{
 pubkey: PublicKey,
 account: AccountInfo<Buffer>,...
 }>>>}
@@ -2764,7 +2764,7 @@ filter - `TokenAccountsFilter`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`Array`<`object`>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`Array`<`object`>>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getTokenAccountsByOwner" ) this)
@@ -2776,7 +2776,7 @@ commitment - `Commitment`<>
 
 (defn Connection_getParsedTokenAccountsByOwner "*
  * Fetch parsed token accounts owned by the specified account
- * @return {Promise<RpcResponseAndContext<Array<{
+ * -@return {Promise<RpcResponseAndContext<Array<{
 pubkey: PublicKey,
 account: AccountInfo<ParsedAccountData>,...
 }>>>}
@@ -2786,7 +2786,7 @@ filter - `TokenAccountsFilter`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`Array`<`object`>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`Array`<`object`>>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getParsedTokenAccountsByOwner" ) this)
@@ -2798,7 +2798,7 @@ commitment - `Commitment`<>
 config - `GetLargestAccountsConfig`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`Array`<`AccountBalancePair`<>>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`Array`<`AccountBalancePair`<>>>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getLargestAccounts" ) this) args))
 
@@ -2810,7 +2810,7 @@ mintAddress - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`Array`<`TokenAccountBalancePair`<>>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`Array`<`TokenAccountBalancePair`<>>>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getTokenLargestAccounts" ) this)
@@ -2823,7 +2823,7 @@ publicKey - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`AccountInfo`<`Buffer`<>>|`NullLiteralTypeAnnotation`>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`AccountInfo`<`Buffer`<>>|`NullLiteralTypeAnnotation`>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getAccountInfoAndContext" ) this)
@@ -2836,7 +2836,7 @@ publicKey - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`AccountInfo`<`Buffer`<>|`ParsedAccountData`<>>|`NullLiteralTypeAnnotation`>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`AccountInfo`<`Buffer`<>|`ParsedAccountData`<>>|`NullLiteralTypeAnnotation`>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getParsedAccountInfo" ) this)
@@ -2849,7 +2849,7 @@ publicKey - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`AccountInfo`<`Buffer`<>>|`NullLiteralTypeAnnotation`>" 
+-@return -`Promise`<`AccountInfo`<`Buffer`<>>|`NullLiteralTypeAnnotation`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getAccountInfo" ) this) args))
 
@@ -2860,7 +2860,7 @@ publicKeys - `ArrayTypeAnnotation`
 configOrCommitment - `GetMultipleAccountsConfig`<>|`Commitment`<>
 
 
-@return -`Promise`<`ArrayTypeAnnotation`>" 
+-@return -`Promise`<`ArrayTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getMultipleAccountsInfo" ) this)
@@ -2874,7 +2874,7 @@ commitment - `Commitment`<>
 epoch - `number`
 
 
-@return -`Promise`<`StakeActivationData`<>>" 
+-@return -`Promise`<`StakeActivationData`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getStakeActivation" ) this) args))
 
@@ -2884,7 +2884,7 @@ epoch - `number`
 
 (defn Connection_getProgramAccounts "*
  * Fetch all the accounts owned by the specified program id
- * @return {Promise<Array<{
+ * -@return {Promise<Array<{
 pubkey: PublicKey,
 account: AccountInfo<Buffer>,...
 }>>}
@@ -2893,7 +2893,7 @@ programId - `PublicKey`<>
 configOrCommitment - `GetProgramAccountsConfig`<>|`Commitment`<>
 
 
-@return -`Promise`<`Array`<`object`>>" 
+-@return -`Promise`<`Array`<`object`>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getProgramAccounts" ) this) args))
 
@@ -2903,7 +2903,7 @@ configOrCommitment - `GetProgramAccountsConfig`<>|`Commitment`<>
 
 (defn Connection_getParsedProgramAccounts "*
  * Fetch and parse all the accounts owned by the specified program id
- * @return {Promise<Array<{
+ * -@return {Promise<Array<{
 pubkey: PublicKey,
 account: AccountInfo<Buffer | ParsedAccountData>,...
 }>>}
@@ -2912,7 +2912,7 @@ programId - `PublicKey`<>
 configOrCommitment - `GetParsedProgramAccountsConfig`<>|`Commitment`<>
 
 
-@return -`Promise`<`Array`<`object`>>" 
+-@return -`Promise`<`Array`<`object`>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getParsedProgramAccounts" ) this)
@@ -2925,7 +2925,7 @@ signature - `TransactionSignature`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`SignatureResult`<>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`SignatureResult`<>>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "confirmTransaction" ) this) args))
 
@@ -2934,7 +2934,7 @@ commitment - `Commitment`<>
      
 
 
-@return -`Promise`<`Array`<`ContactInfo`<>>>" 
+-@return -`Promise`<`Array`<`ContactInfo`<>>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getClusterNodes" ) this) args))
 
@@ -2944,7 +2944,7 @@ commitment - `Commitment`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`VoteAccountStatus`<>>" 
+-@return -`Promise`<`VoteAccountStatus`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getVoteAccounts" ) this) args))
 
@@ -2954,7 +2954,7 @@ commitment - `Commitment`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`number`>" 
+-@return -`Promise`<`number`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getSlot" ) this) args))
 
@@ -2964,20 +2964,20 @@ commitment - `Commitment`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`string`>" 
+-@return -`Promise`<`string`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getSlotLeader" ) this) args))
 
 (defn Connection_getSlotLeaders "*
      * Fetch `limit` number of slot leaders starting from `startSlot`
-     * @param startSlot fetch slot leaders starting from this slot
-     * @param limit number of slot leaders to return
+     * -@param startSlot fetch slot leaders starting from this slot
+     * -@param limit number of slot leaders to return
      
 startSlot - `number`
 limit - `number`
 
 
-@return -`Promise`<`Array`<`PublicKey`<>>>" 
+-@return -`Promise`<`Array`<`PublicKey`<>>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getSlotLeaders" ) this) args))
 
@@ -2988,7 +2988,7 @@ signature - `TransactionSignature`<>
 config - `SignatureStatusConfig`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`SignatureStatus`<>|`NullLiteralTypeAnnotation`>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`SignatureStatus`<>|`NullLiteralTypeAnnotation`>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getSignatureStatus" ) this) args))
 
@@ -2999,7 +2999,7 @@ signatures - `Array`<`TransactionSignature`<>>
 config - `SignatureStatusConfig`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`Array`<`SignatureStatus`<>|`NullLiteralTypeAnnotation`>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`Array`<`SignatureStatus`<>|`NullLiteralTypeAnnotation`>>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getSignatureStatuses" ) this)
@@ -3011,7 +3011,7 @@ config - `SignatureStatusConfig`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`number`>" 
+-@return -`Promise`<`number`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getTransactionCount" ) this)
@@ -3019,12 +3019,12 @@ commitment - `Commitment`<>
 
 (defn Connection_getTotalSupply "*
      * Fetch the current total currency supply of the cluster in lamports
-     * @deprecated [object Object],[object Object],[object Object]
+     * -@deprecated [object Object],[object Object],[object Object]
      
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`number`>" 
+-@return -`Promise`<`number`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getTotalSupply" ) this) args))
 
@@ -3034,7 +3034,7 @@ commitment - `Commitment`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`InflationGovernor`<>>" 
+-@return -`Promise`<`InflationGovernor`<>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getInflationGovernor" ) this)
@@ -3048,7 +3048,7 @@ epoch - `number`
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`ArrayTypeAnnotation`>" 
+-@return -`Promise`<`ArrayTypeAnnotation`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getInflationReward" ) this) args))
 
@@ -3058,7 +3058,7 @@ commitment - `Commitment`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`EpochInfo`<>>" 
+-@return -`Promise`<`EpochInfo`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getEpochInfo" ) this) args))
 
@@ -3067,17 +3067,17 @@ commitment - `Commitment`<>
      
 
 
-@return -`Promise`<`EpochSchedule`<>>" 
+-@return -`Promise`<`EpochSchedule`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getEpochSchedule" ) this) args))
 
 (defn Connection_getLeaderSchedule "*
      * Fetch the leader schedule for the current epoch
-     * @return {Promise<RpcResponseAndContext<LeaderSchedule>>}
+     * -@return {Promise<RpcResponseAndContext<LeaderSchedule>>}
      
 
 
-@return -`Promise`<`LeaderSchedule`<>>" 
+-@return -`Promise`<`LeaderSchedule`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getLeaderSchedule" ) this) args))
 
@@ -3089,7 +3089,7 @@ dataLength - `number`
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`number`>" 
+-@return -`Promise`<`number`>"
   [this & args]
   (apply
     (.bind
@@ -3103,7 +3103,7 @@ commitment - `Commitment`<>
 
 (defn Connection_getRecentBlockhashAndContext "*
  * Fetch a recent blockhash from the cluster, return with context
- * @return {Promise<RpcResponseAndContext<{
+ * -@return {Promise<RpcResponseAndContext<{
 blockhash: Blockhash,
 feeCalculator: FeeCalculator,...
 }>>}
@@ -3111,7 +3111,7 @@ feeCalculator: FeeCalculator,...
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`object`>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`object`>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getRecentBlockhashAndContext" ) this)
@@ -3119,12 +3119,12 @@ commitment - `Commitment`<>
 
 (defn Connection_getRecentPerformanceSamples "*
      * Fetch recent performance samples
-     * @return {Promise<Array<PerfSample>>}
+     * -@return {Promise<Array<PerfSample>>}
      
 limit - `number`
 
 
-@return -`Promise`<`Array`<`PerfSample`<>>>" 
+-@return -`Promise`<`Array`<`PerfSample`<>>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getRecentPerformanceSamples" ) this)
@@ -3137,7 +3137,7 @@ blockhash - `Blockhash`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`FeeCalculator`<>|`NullLiteralTypeAnnotation`>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`FeeCalculator`<>|`NullLiteralTypeAnnotation`>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getFeeCalculatorForBlockhash" ) this)
@@ -3150,7 +3150,7 @@ message - `Message`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`number`>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`number`>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getFeeForMessage" ) this) args))
 
@@ -3160,7 +3160,7 @@ commitment - `Commitment`<>
 
 (defn Connection_getRecentBlockhash "*
  * Fetch a recent blockhash from the cluster
- * @return {Promise<{
+ * -@return {Promise<{
 blockhash: Blockhash,
 feeCalculator: FeeCalculator,...
 }>}
@@ -3168,7 +3168,7 @@ feeCalculator: FeeCalculator,...
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`object`>" 
+-@return -`Promise`<`object`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getRecentBlockhash" ) this) args))
 
@@ -3177,7 +3177,7 @@ commitment - `Commitment`<>
      
 
 
-@return -`Promise`<`Version`<>>" 
+-@return -`Promise`<`Version`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getVersion" ) this) args))
 
@@ -3186,7 +3186,7 @@ commitment - `Commitment`<>
      
 
 
-@return -`Promise`<`string`>" 
+-@return -`Promise`<`string`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getGenesisHash" ) this) args))
 
@@ -3199,7 +3199,7 @@ slot - `number`
 opts - `object`
 
 
-@return -`Promise`<`BlockResponse`<>|`NullLiteralTypeAnnotation`>" 
+-@return -`Promise`<`BlockResponse`<>|`NullLiteralTypeAnnotation`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getBlock" ) this) args))
 
@@ -3212,20 +3212,20 @@ signature - `string`
 opts - `object`
 
 
-@return -`Promise`<`TransactionResponse`<>|`NullLiteralTypeAnnotation`>" 
+-@return -`Promise`<`TransactionResponse`<>|`NullLiteralTypeAnnotation`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getTransaction" ) this) args))
 
 (defn Connection_getConfirmedBlock "*
      * Fetch a list of Transactions and transaction statuses from the cluster
      * for a confirmed block.
-     * @deprecated [object Object],[object Object],[object Object]
+     * -@deprecated [object Object],[object Object],[object Object]
      
 slot - `number`
 commitment - `Finality`<>
 
 
-@return -`Promise`<`ConfirmedBlock`<>>" 
+-@return -`Promise`<`ConfirmedBlock`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getConfirmedBlock" ) this) args))
 
@@ -3237,7 +3237,7 @@ endSlot - `number`
 commitment - `Finality`<>
 
 
-@return -`Promise`<`Array`<`number`>>" 
+-@return -`Promise`<`Array`<`number`>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getBlocks" ) this) args))
 
@@ -3248,7 +3248,7 @@ slot - `number`
 commitment - `Finality`<>
 
 
-@return -`Promise`<`ConfirmedBlockSignatures`<>>" 
+-@return -`Promise`<`ConfirmedBlockSignatures`<>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getConfirmedBlockSignatures" ) this)
@@ -3261,7 +3261,7 @@ signature - `TransactionSignature`<>
 commitment - `Finality`<>
 
 
-@return -`Promise`<`ConfirmedTransaction`<>|`NullLiteralTypeAnnotation`>" 
+-@return -`Promise`<`ConfirmedTransaction`<>|`NullLiteralTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getConfirmedTransaction" ) this)
@@ -3274,7 +3274,7 @@ signature - `TransactionSignature`<>
 commitment - `Finality`<>
 
 
-@return -`Promise`<`ParsedConfirmedTransaction`<>|`NullLiteralTypeAnnotation`>" 
+-@return -`Promise`<`ParsedConfirmedTransaction`<>|`NullLiteralTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getParsedConfirmedTransaction" ) this)
@@ -3287,7 +3287,7 @@ signatures - `ArrayTypeAnnotation`
 commitment - `Finality`<>
 
 
-@return -`Promise`<`ArrayTypeAnnotation`>" 
+-@return -`Promise`<`ArrayTypeAnnotation`>"
   [this & args]
   (apply
     (.bind
@@ -3298,17 +3298,17 @@ commitment - `Finality`<>
 (defn Connection_getConfirmedSignaturesForAddress "*
      * Fetch a list of all the confirmed signatures for transactions involving an address
      * within a specified slot range. Max range allowed is 10,000 slots.
-     * @deprecated [object Object],[object Object],[object Object]
-     * @param address queried address
-     * @param startSlot start slot, inclusive
-     * @param endSlot end slot, inclusive
+     * -@deprecated [object Object],[object Object],[object Object]
+     * -@param address queried address
+     * -@param startSlot start slot, inclusive
+     * -@param endSlot end slot, inclusive
      
 address - `PublicKey`<>
 startSlot - `number`
 endSlot - `number`
 
 
-@return -`Promise`<`Array`<`TransactionSignature`<>>>" 
+-@return -`Promise`<`Array`<`TransactionSignature`<>>>"
   [this & args]
   (apply
     (.bind
@@ -3319,15 +3319,15 @@ endSlot - `number`
 (defn Connection_getConfirmedSignaturesForAddress2 "*
      * Returns confirmed signatures for transactions involving an
      * address backwards in time from the provided signature or most recent confirmed block
-     * @param address queried address
-     * @param options
+     * -@param address queried address
+     * -@param options
      
 address - `PublicKey`<>
 options - `ConfirmedSignaturesForAddress2Options`<>
 commitment - `Finality`<>
 
 
-@return -`Promise`<`Array`<`ConfirmedSignatureInfo`<>>>" 
+-@return -`Promise`<`Array`<`ConfirmedSignatureInfo`<>>>"
   [this & args]
   (apply
     (.bind
@@ -3338,15 +3338,15 @@ commitment - `Finality`<>
 (defn Connection_getSignaturesForAddress "*
      * Returns confirmed signatures for transactions involving an
      * address backwards in time from the provided signature or most recent confirmed block
-     * @param address queried address
-     * @param options
+     * -@param address queried address
+     * -@param options
      
 address - `PublicKey`<>
 options - `SignaturesForAddressOptions`<>
 commitment - `Finality`<>
 
 
-@return -`Promise`<`Array`<`ConfirmedSignatureInfo`<>>>" 
+-@return -`Promise`<`Array`<`ConfirmedSignatureInfo`<>>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "getSignaturesForAddress" ) this)
@@ -3359,7 +3359,7 @@ nonceAccount - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`NonceAccount`<>|`NullLiteralTypeAnnotation`>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`NonceAccount`<>|`NullLiteralTypeAnnotation`>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getNonceAndContext" ) this) args))
 
@@ -3370,7 +3370,7 @@ nonceAccount - `PublicKey`<>
 commitment - `Commitment`<>
 
 
-@return -`Promise`<`NonceAccount`<>|`NullLiteralTypeAnnotation`>" 
+-@return -`Promise`<`NonceAccount`<>|`NullLiteralTypeAnnotation`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "getNonce" ) this) args))
 
@@ -3378,7 +3378,7 @@ commitment - `Commitment`<>
      * Request an allocation of lamports to the specified address
      *
      * ```typescript
-     * import { Connection, PublicKey, LAMPORTS_PER_SOL } from \"@solana/web3.js\";
+     * import { Connection, PublicKey, LAMPORTS_PER_SOL } from \"-@solana/web3.js\";
      *
      * (async () => {
      *   const connection = new Connection(\"https://api.testnet.solana.com\", \"confirmed\");
@@ -3392,7 +3392,7 @@ to - `PublicKey`<>
 lamports - `number`
 
 
-@return -`Promise`<`TransactionSignature`<>>" 
+-@return -`Promise`<`TransactionSignature`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "requestAirdrop" ) this) args))
 
@@ -3404,7 +3404,7 @@ signers - `Array`<`Signer`<>>
 includeAccounts - `bool`|`Array`<`PublicKey`<>>
 
 
-@return -`Promise`<`RpcResponseAndContext`<`SimulatedTransactionResponse`<>>>" 
+-@return -`Promise`<`RpcResponseAndContext`<`SimulatedTransactionResponse`<>>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "simulateTransaction" ) this)
@@ -3418,7 +3418,7 @@ signers - `Array`<`Signer`<>>
 options - `SendOptions`<>
 
 
-@return -`Promise`<`TransactionSignature`<>>" 
+-@return -`Promise`<`TransactionSignature`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "sendTransaction" ) this) args))
 
@@ -3430,7 +3430,7 @@ rawTransaction - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 options - `SendOptions`<>
 
 
-@return -`Promise`<`TransactionSignature`<>>" 
+-@return -`Promise`<`TransactionSignature`<>>"
   [this & args]
   (apply (.bind (cljs.core/aget this "sendRawTransaction" ) this) args))
 
@@ -3442,7 +3442,7 @@ encodedTransaction - `string`
 options - `SendOptions`<>
 
 
-@return -`Promise`<`TransactionSignature`<>>" 
+-@return -`Promise`<`TransactionSignature`<>>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "sendEncodedTransaction" ) this)
@@ -3450,28 +3450,28 @@ options - `SendOptions`<>
 
 (defn Connection_onAccountChange "*
      * Register a callback to be invoked whenever the specified account changes
-     * @param publicKey Public key of the account to monitor
-     * @param callback Function to invoke whenever the account is changed
-     * @param commitment Specify the commitment level account changes must reach before notification
-     * @return subscription id
+     * -@param publicKey Public key of the account to monitor
+     * -@param callback Function to invoke whenever the account is changed
+     * -@param commitment Specify the commitment level account changes must reach before notification
+     * -@return subscription id
      
 publicKey - `PublicKey`<>
 callback - `AccountChangeCallback`<>
 commitment - `Commitment`<>
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "onAccountChange" ) this) args))
 
 (defn Connection_removeAccountChangeListener "*
      * Deregister an account notification callback
-     * @param id subscription id to deregister
+     * -@param id subscription id to deregister
      
 id - `number`
 
 
-@return -`Promise`<`VoidTypeAnnotation`>" 
+-@return -`Promise`<`VoidTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "removeAccountChangeListener" ) this)
@@ -3480,11 +3480,11 @@ id - `number`
 (defn Connection_onProgramAccountChange "*
      * Register a callback to be invoked whenever accounts owned by the
      * specified program change
-     * @param programId Public key of the program to monitor
-     * @param callback Function to invoke whenever the account is changed
-     * @param commitment Specify the commitment level account changes must reach before notification
-     * @param filters The program account filters to pass into the RPC method
-     * @return subscription id
+     * -@param programId Public key of the program to monitor
+     * -@param callback Function to invoke whenever the account is changed
+     * -@param commitment Specify the commitment level account changes must reach before notification
+     * -@param filters The program account filters to pass into the RPC method
+     * -@return subscription id
      
 programId - `PublicKey`<>
 callback - `ProgramAccountChangeCallback`<>
@@ -3492,7 +3492,7 @@ commitment - `Commitment`<>
 filters - `ArrayTypeAnnotation`
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "onProgramAccountChange" ) this)
@@ -3500,12 +3500,12 @@ filters - `ArrayTypeAnnotation`
 
 (defn Connection_removeProgramAccountChangeListener "*
      * Deregister an account notification callback
-     * @param id subscription id to deregister
+     * -@param id subscription id to deregister
      
 id - `number`
 
 
-@return -`Promise`<`VoidTypeAnnotation`>" 
+-@return -`Promise`<`VoidTypeAnnotation`>"
   [this & args]
   (apply
     (.bind
@@ -3521,18 +3521,18 @@ callback - `LogsCallback`<>
 commitment - `Commitment`<>
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "onLogs" ) this) args))
 
 (defn Connection_removeOnLogsListener "*
      * Deregister a logs callback.
-     * @param id subscription id to deregister.
+     * -@param id subscription id to deregister.
      
 id - `number`
 
 
-@return -`Promise`<`VoidTypeAnnotation`>" 
+-@return -`Promise`<`VoidTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "removeOnLogsListener" ) this)
@@ -3540,24 +3540,24 @@ id - `number`
 
 (defn Connection_onSlotChange "*
      * Register a callback to be invoked upon slot changes
-     * @param callback Function to invoke whenever the slot changes
-     * @return subscription id
+     * -@param callback Function to invoke whenever the slot changes
+     * -@return subscription id
      
 callback - `SlotChangeCallback`<>
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "onSlotChange" ) this) args))
 
 (defn Connection_removeSlotChangeListener "*
      * Deregister a slot notification callback
-     * @param id subscription id to deregister
+     * -@param id subscription id to deregister
      
 id - `number`
 
 
-@return -`Promise`<`VoidTypeAnnotation`>" 
+-@return -`Promise`<`VoidTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "removeSlotChangeListener" ) this)
@@ -3565,24 +3565,24 @@ id - `number`
 
 (defn Connection_onSlotUpdate "*
      * [object Object],[object Object],[object Object]
-     * @param callback Function to invoke whenever the slot updates
-     * @return subscription id
+     * -@param callback Function to invoke whenever the slot updates
+     * -@return subscription id
      
 callback - `SlotUpdateCallback`<>
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "onSlotUpdate" ) this) args))
 
 (defn Connection_removeSlotUpdateListener "*
      * Deregister a slot update notification callback
-     * @param id subscription id to deregister
+     * -@param id subscription id to deregister
      
 id - `number`
 
 
-@return -`Promise`<`VoidTypeAnnotation`>" 
+-@return -`Promise`<`VoidTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "removeSlotUpdateListener" ) this)
@@ -3595,41 +3595,41 @@ encoding - \"jsonParsed\"|\"base64\"
 extra - `any`
 
 
-@return -`Array`<`any`>" 
+-@return -`Array`<`any`>"
   [this & args]
   (apply (.bind (cljs.core/aget this "_buildArgs" ) this) args))
 
 (defn Connection_onSignature "*
      * Register a callback to be invoked upon signature updates
-     * @param signature Transaction signature string in base 58
-     * @param callback Function to invoke on signature notifications
-     * @param commitment Specify the commitment level signature must reach before notification
-     * @return subscription id
+     * -@param signature Transaction signature string in base 58
+     * -@param callback Function to invoke on signature notifications
+     * -@param commitment Specify the commitment level signature must reach before notification
+     * -@return subscription id
      
 signature - `TransactionSignature`<>
 callback - `SignatureResultCallback`<>
 commitment - `Commitment`<>
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "onSignature" ) this) args))
 
 (defn Connection_onSignatureWithOptions "*
      * Register a callback to be invoked when a transaction is
      * received and/or processed.
-     * @param signature Transaction signature string in base 58
-     * @param callback Function to invoke on signature notifications
-     * @param options Enable received notifications and set the commitment
+     * -@param signature Transaction signature string in base 58
+     * -@param callback Function to invoke on signature notifications
+     * -@param options Enable received notifications and set the commitment
      * level that signature must reach before notification
-     * @return subscription id
+     * -@return subscription id
      
 signature - `TransactionSignature`<>
 callback - `SignatureSubscriptionCallback`<>
 options - `SignatureSubscriptionOptions`<>
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "onSignatureWithOptions" ) this)
@@ -3637,12 +3637,12 @@ options - `SignatureSubscriptionOptions`<>
 
 (defn Connection_removeSignatureListener "*
      * Deregister a signature notification callback
-     * @param id subscription id to deregister
+     * -@param id subscription id to deregister
      
 id - `number`
 
 
-@return -`Promise`<`VoidTypeAnnotation`>" 
+-@return -`Promise`<`VoidTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "removeSignatureListener" ) this)
@@ -3650,24 +3650,24 @@ id - `number`
 
 (defn Connection_onRootChange "*
      * Register a callback to be invoked upon root changes
-     * @param callback Function to invoke whenever the root changes
-     * @return subscription id
+     * -@param callback Function to invoke whenever the root changes
+     * -@return subscription id
      
 callback - `RootChangeCallback`<>
 
 
-@return -`number`" 
+-@return -`number`"
   [this & args]
   (apply (.bind (cljs.core/aget this "onRootChange" ) this) args))
 
 (defn Connection_removeRootChangeListener "*
      * Deregister a root notification callback
-     * @param id subscription id to deregister
+     * -@param id subscription id to deregister
      
 id - `number`
 
 
-@return -`Promise`<`VoidTypeAnnotation`>" 
+-@return -`Promise`<`VoidTypeAnnotation`>"
   [this & args]
   (apply
     (.bind (cljs.core/aget this "removeRootChangeListener" ) this)
@@ -3686,7 +3686,7 @@ id - `number`
 dataLength - `number`
 
 
-@return -`number`" 
+-@return -`number`"
   [& args]
   (apply
     (.bind
@@ -3699,12 +3699,12 @@ dataLength - `number`
 
 (defn BpfLoader_load "*
      * Load a BPF program
-     * @param connection The connection to use
-     * @param payer Account that will pay program loading fees
-     * @param program Account to load the program into
-     * @param elf The entire ELF containing the BPF program
-     * @param loaderProgramId The program id of the BPF loader to use
-     * @return true if program was loaded successfully, false if program was already loaded
+     * -@param connection The connection to use
+     * -@param payer Account that will pay program loading fees
+     * -@param program Account to load the program into
+     * -@param elf The entire ELF containing the BPF program
+     * -@param loaderProgramId The program id of the BPF loader to use
+     * -@return true if program was loaded successfully, false if program was already loaded
      
 connection - `Connection`<>
 payer - `Signer`<>
@@ -3713,7 +3713,7 @@ elf - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 loaderProgramId - `PublicKey`<>
 
 
-@return -`Promise`<`bool`>" 
+-@return -`Promise`<`bool`>"
   [& args]
   (apply
     (.bind
@@ -3788,7 +3788,7 @@ loaderProgramId - `PublicKey`<>
 params - `CreateEd25519InstructionWithPublicKeyParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -3806,7 +3806,7 @@ params - `CreateEd25519InstructionWithPublicKeyParams`<>
 params - `CreateEd25519InstructionWithPrivateKeyParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -3835,7 +3835,7 @@ params - `CreateEd25519InstructionWithPrivateKeyParams`<>
 dataLength - `number`
 
 
-@return -`number`" 
+-@return -`number`"
   [& args]
   (apply
     (.bind
@@ -3848,12 +3848,12 @@ dataLength - `number`
 
 (defn Loader_load "*
      * Loads a generic program
-     * @param connection The connection to use
-     * @param payer System account that pays to load the program
-     * @param program Account to load the program into
-     * @param programId Public key that identifies the loader
-     * @param data Program octets
-     * @return true if program was loaded successfully, false if program was already loaded
+     * -@param connection The connection to use
+     * -@param payer System account that pays to load the program
+     * -@param program Account to load the program into
+     * -@param programId Public key that identifies the loader
+     * -@param data Program octets
+     * -@return true if program was loaded successfully, false if program was already loaded
      
 connection - `Connection`<>
 payer - `Signer`<>
@@ -3862,7 +3862,7 @@ programId - `PublicKey`<>
 data - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 
-@return -`Promise`<`bool`>" 
+-@return -`Promise`<`bool`>"
   [& args]
   (apply
     (.bind
@@ -3890,14 +3890,14 @@ data - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 (defn Authorized_constructor "*
      * Create a new Authorized object
-     * @param staker the stake authority
-     * @param withdrawer the withdraw authority
+     * -@param staker the stake authority
+     * -@param withdrawer the withdraw authority
      
 staker - `PublicKey`<>
 withdrawer - `PublicKey`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -3939,7 +3939,7 @@ epoch - `number`
 custodian - `PublicKey`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -4254,7 +4254,7 @@ custodian - `PublicKey`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`StakeInstructionType`<>" 
+-@return -`StakeInstructionType`<>"
   [& args]
   (apply
     (.bind
@@ -4271,7 +4271,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`InitializeStakeParams`<>" 
+-@return -`InitializeStakeParams`<>"
   [& args]
   (apply
     (.bind
@@ -4288,7 +4288,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`DelegateStakeParams`<>" 
+-@return -`DelegateStakeParams`<>"
   [& args]
   (apply
     (.bind
@@ -4305,7 +4305,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`AuthorizeStakeParams`<>" 
+-@return -`AuthorizeStakeParams`<>"
   [& args]
   (apply
     (.bind
@@ -4322,7 +4322,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`AuthorizeWithSeedStakeParams`<>" 
+-@return -`AuthorizeWithSeedStakeParams`<>"
   [& args]
   (apply
     (.bind
@@ -4339,7 +4339,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`SplitStakeParams`<>" 
+-@return -`SplitStakeParams`<>"
   [& args]
   (apply
     (.bind
@@ -4356,7 +4356,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`MergeStakeParams`<>" 
+-@return -`MergeStakeParams`<>"
   [& args]
   (apply
     (.bind
@@ -4373,7 +4373,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`WithdrawStakeParams`<>" 
+-@return -`WithdrawStakeParams`<>"
   [& args]
   (apply
     (.bind
@@ -4390,7 +4390,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`DeactivateStakeParams`<>" 
+-@return -`DeactivateStakeParams`<>"
   [& args]
   (apply
     (.bind
@@ -4446,7 +4446,7 @@ instruction - `TransactionInstruction`<>
 params - `InitializeStakeParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -4464,7 +4464,7 @@ params - `InitializeStakeParams`<>
 params - `CreateStakeAccountWithSeedParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -4481,7 +4481,7 @@ params - `CreateStakeAccountWithSeedParams`<>
 params - `CreateStakeAccountParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -4500,7 +4500,7 @@ params - `CreateStakeAccountParams`<>
 params - `DelegateStakeParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -4518,7 +4518,7 @@ params - `DelegateStakeParams`<>
 params - `AuthorizeStakeParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -4536,7 +4536,7 @@ params - `AuthorizeStakeParams`<>
 params - `AuthorizeWithSeedStakeParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -4553,7 +4553,7 @@ params - `AuthorizeWithSeedStakeParams`<>
 params - `SplitStakeParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -4570,7 +4570,7 @@ params - `SplitStakeParams`<>
 params - `MergeStakeParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -4587,7 +4587,7 @@ params - `MergeStakeParams`<>
 params - `WithdrawStakeParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -4604,7 +4604,7 @@ params - `WithdrawStakeParams`<>
 params - `DeactivateStakeParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -5004,7 +5004,7 @@ params - `DeactivateStakeParams`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`SystemInstructionType`<>" 
+-@return -`SystemInstructionType`<>"
   [& args]
   (apply
     (.bind
@@ -5021,7 +5021,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`CreateAccountParams`<>" 
+-@return -`CreateAccountParams`<>"
   [& args]
   (apply
     (.bind
@@ -5038,7 +5038,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`TransferParams`<>" 
+-@return -`TransferParams`<>"
   [& args]
   (apply
     (.bind
@@ -5055,7 +5055,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`TransferWithSeedParams`<>" 
+-@return -`TransferWithSeedParams`<>"
   [& args]
   (apply
     (.bind
@@ -5072,7 +5072,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`AllocateParams`<>" 
+-@return -`AllocateParams`<>"
   [& args]
   (apply
     (.bind
@@ -5089,7 +5089,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`AllocateWithSeedParams`<>" 
+-@return -`AllocateWithSeedParams`<>"
   [& args]
   (apply
     (.bind
@@ -5106,7 +5106,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`AssignParams`<>" 
+-@return -`AssignParams`<>"
   [& args]
   (apply
     (.bind
@@ -5123,7 +5123,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`AssignWithSeedParams`<>" 
+-@return -`AssignWithSeedParams`<>"
   [& args]
   (apply
     (.bind
@@ -5140,7 +5140,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`CreateAccountWithSeedParams`<>" 
+-@return -`CreateAccountWithSeedParams`<>"
   [& args]
   (apply
     (.bind
@@ -5157,7 +5157,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`InitializeNonceParams`<>" 
+-@return -`InitializeNonceParams`<>"
   [& args]
   (apply
     (.bind
@@ -5174,7 +5174,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`AdvanceNonceParams`<>" 
+-@return -`AdvanceNonceParams`<>"
   [& args]
   (apply
     (.bind
@@ -5191,7 +5191,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`WithdrawNonceParams`<>" 
+-@return -`WithdrawNonceParams`<>"
   [& args]
   (apply
     (.bind
@@ -5208,7 +5208,7 @@ instruction - `TransactionInstruction`<>
 instruction - `TransactionInstruction`<>
 
 
-@return -`AuthorizeNonceParams`<>" 
+-@return -`AuthorizeNonceParams`<>"
   [& args]
   (apply
     (.bind
@@ -5246,7 +5246,7 @@ instruction - `TransactionInstruction`<>
 params - `CreateAccountParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5263,7 +5263,7 @@ params - `CreateAccountParams`<>
 params - `TransferParams`<>|`TransferWithSeedParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5280,7 +5280,7 @@ params - `TransferParams`<>|`TransferWithSeedParams`<>
 params - `AssignParams`<>|`AssignWithSeedParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5298,7 +5298,7 @@ params - `AssignParams`<>|`AssignWithSeedParams`<>
 params - `CreateAccountWithSeedParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5315,7 +5315,7 @@ params - `CreateAccountWithSeedParams`<>
 params - `CreateNonceAccountParams`<>|`CreateNonceAccountWithSeedParams`<>
 
 
-@return -`Transaction`<>" 
+-@return -`Transaction`<>"
   [& args]
   (apply
     (.bind
@@ -5332,7 +5332,7 @@ params - `CreateNonceAccountParams`<>|`CreateNonceAccountWithSeedParams`<>
 params - `InitializeNonceParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5349,7 +5349,7 @@ params - `InitializeNonceParams`<>
 params - `AdvanceNonceParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5366,7 +5366,7 @@ params - `AdvanceNonceParams`<>
 params - `WithdrawNonceParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5384,7 +5384,7 @@ params - `WithdrawNonceParams`<>
 params - `AuthorizeNonceParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5401,7 +5401,7 @@ params - `AuthorizeNonceParams`<>
 params - `AllocateParams`<>|`AllocateWithSeedParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5513,12 +5513,12 @@ params - `AllocateParams`<>|`AllocateWithSeedParams`<>
 
 (defn Secp256k1Program_publicKeyToEthAddress "*
      * Construct an Ethereum address from a secp256k1 public key buffer.
-     * @param {Buffer} publicKey a 64 byte secp256k1 public key buffer
+     * -@param {Buffer} publicKey a 64 byte secp256k1 public key buffer
      
 publicKey - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 
-@return -`Buffer`<>" 
+-@return -`Buffer`<>"
   [& args]
   (apply
     (.bind
@@ -5536,7 +5536,7 @@ publicKey - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 params - `CreateSecp256k1InstructionWithPublicKeyParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5554,7 +5554,7 @@ params - `CreateSecp256k1InstructionWithPublicKeyParams`<>
 params - `CreateSecp256k1InstructionWithEthAddressParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5572,7 +5572,7 @@ params - `CreateSecp256k1InstructionWithEthAddressParams`<>
 params - `CreateSecp256k1InstructionWithPrivateKeyParams`<>
 
 
-@return -`TransactionInstruction`<>" 
+-@return -`TransactionInstruction`<>"
   [& args]
   (apply
     (.bind
@@ -5629,14 +5629,14 @@ params - `CreateSecp256k1InstructionWithPrivateKeyParams`<>
 
 (defn ValidatorInfo_constructor "*
      * Construct a valid ValidatorInfo
-     * @param key validator public key
-     * @param info validator information
+     * -@param key validator public key
+     * -@param info validator information
      
 key - `PublicKey`<>
 info - `Info`<>
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -5649,13 +5649,13 @@ info - `Info`<>
 (defn ValidatorInfo_fromConfigData "*
      * Deserialize ValidatorInfo from the config account data. Exactly two config
      * keys are required in the data.
-     * @param buffer config account data
-     * @return null if info was not found
+     * -@param buffer config account data
+     * -@return null if info was not found
      
 buffer - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 
-@return -`ValidatorInfo`<>|`NullLiteralTypeAnnotation`" 
+-@return -`ValidatorInfo`<>|`NullLiteralTypeAnnotation`"
   [& args]
   (apply
     (.bind
@@ -5784,13 +5784,13 @@ buffer - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 (defn VoteAccount_fromAccountData "*
      * Deserialize VoteAccount from the account data.
-     * @param buffer account data
-     * @return VoteAccount
+     * -@param buffer account data
+     * -@return VoteAccount
      
 buffer - `Buffer`<>|`Uint8Array`<>|`Array`<`number`>
 
 
-@return -`VoteAccount`<>" 
+-@return -`VoteAccount`<>"
   [& args]
   (apply
     (.bind
@@ -5815,7 +5815,7 @@ message - `string`
 logs - `ArrayTypeAnnotation`
 
 
-@return -`this`<>" 
+-@return -`this`<>"
   [& args]
   (cljs.core/let
     [f
@@ -5832,7 +5832,7 @@ signers - `Array`<`Signer`<>>
 options - `ConfirmOptions`<>
 
 
-@return -`Promise`<`TransactionSignature`<>>" 
+-@return -`Promise`<`TransactionSignature`<>>"
   [& args]
   (apply
     (.bind
@@ -5847,7 +5847,7 @@ rawTransaction - `Buffer`<>
 options - `ConfirmOptions`<>
 
 
-@return -`Promise`<`TransactionSignature`<>>" 
+-@return -`Promise`<`TransactionSignature`<>>"
   [& args]
   (apply
     (.bind
@@ -5863,7 +5863,7 @@ cluster - `Cluster`<>
 tls - `bool`
 
 
-@return -`string`" 
+-@return -`string`"
   [& args]
   (apply
     (.bind

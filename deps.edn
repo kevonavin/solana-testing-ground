@@ -1,7 +1,8 @@
 {:paths ["src"]
- :deps  {org.clojure/clojure  {:mvn/version "1.11.0-alpha3"}
-         thheller/shadow-cljs {:mvn/version "2.15.10"}
+ :deps  {org.clojure/clojure  {:mvn/version "1.11.0-alpha4"}
+         thheller/shadow-cljs {:mvn/version "2.16.12"}
 
+         com.google.javascript/closure-compiler-unshaded {:mvn/version "v20211006"}
            ;; common libs
          net.cgrand/xforms           {:mvn/version "0.19.2"}
          funcool/promesa             {:git/url "https://github.com/funcool/promesa"
@@ -16,8 +17,12 @@
          org.clojure/core.match {:mvn/version "1.0.0"}
          org.clojure/spec.alpha {:mvn/version "0.3.214"}
          }
- :aliases {:dev {:extra-deps {vlaaad/reveal                            {:mvn/version "1.3.250"}}}
-	 :cljs {:extra-deps {org.clojure/clojurescript {:mvn/version "1.10.866"}
+
+ :aliases {:dev {:main-opts ["-m" "kev.sol.dev"
+                              "--middleware"
+                              "[shadow.cljs.devtools.server.nrepl/middleware,cider.nrepl/cider-middleware]"
+                              "--interactive" "--color"]}
+           :cljs {:extra-deps {org.clojure/clojurescript {:mvn/version "1.10.914"}
                                cider/cider-nrepl         {:mvn/version "0.26.0"}
 
                                   ;; libs
@@ -28,6 +33,8 @@
                                net.sekao/odoyle-rules {:git/url "https://github.com/oakes/odoyle-rules"
                                                        :sha     "1009ef700a54bd4c8484a069cb6e652d1ed93d51"}
                                }
+                  ;; for some reason this needs to not exist for release builds
+                  #_#_
                   :main-opts ["-m" "kev.sol.dev"
                               "--middleware"
                               "[shadow.cljs.devtools.server.nrepl/middleware,cider.nrepl/cider-middleware]"
